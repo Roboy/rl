@@ -28,6 +28,7 @@
 #define RL_MDL_URDFFACTORY_H
 
 #include "Factory.h"
+#include <rl/kin/Tree.h>
 
 namespace rl
 {
@@ -41,7 +42,15 @@ namespace rl
 			virtual ~UrdfFactory();
 			
 			void load(const ::std::string& filename, Model* model);
-			
+            /**
+             * Constructs a Model from Urdf from the defined root_link to end_link
+             * @param filename path to urd
+             * @param root_link root link of kinematic tree
+             * @param end_link end link of kinematic tree
+             * @param model populated model
+             */
+			void load(const ::std::string& filename, ::std::string& root_link, ::std::string& end_link,  Model* model);
+
 		protected:
 			
 		private:

@@ -13,6 +13,7 @@ set(
 	Revolute.h
 	Rhino.h
 	Transform.h
+	Tree.h
 )
 
 set(
