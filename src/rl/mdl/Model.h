@@ -220,7 +220,7 @@ namespace rl
 
         public:
 			::std::vector<Body*> bodies;
-            
+
         protected:
 
 			::std::vector<Element*> elements;
