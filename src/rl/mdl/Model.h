@@ -179,7 +179,7 @@ namespace rl
 			
 		protected:
 			friend class Compound;
-			
+
 			typedef ::boost::adjacency_list<
 				::boost::listS,
 				::boost::listS,
@@ -195,7 +195,7 @@ namespace rl
 				::boost::no_property,
 				::boost::listS
 			> Tree;
-			
+
 			typedef ::boost::graph_traits<Tree>::edge_descriptor Edge;
 			
 			typedef ::boost::graph_traits<Tree>::edge_iterator EdgeIterator;
@@ -217,9 +217,12 @@ namespace rl
 			typedef ::std::pair<VertexIterator, VertexIterator> VertexIteratorPair;
 			
 			void update(const Vertex& u);
-			
+
+        public:
 			::std::vector<Body*> bodies;
-			
+            
+        protected:
+
 			::std::vector<Element*> elements;
 			
 			::std::vector<Frame*> frames;
@@ -245,9 +248,9 @@ namespace rl
 			Vertex root;
 			
 			::std::vector<Edge> tools;
-			
+
 			::std::vector<Transform*> transforms;
-			
+
 			Tree tree;
 			
 		private:
