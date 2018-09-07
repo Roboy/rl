@@ -326,7 +326,7 @@ namespace rl {
                     }
                 }
                 str << "}" << endl;
-                char cmd[2000];
+                char cmd[10000];
                 sprintf(cmd, "echo \"%s\"|dot -Tpng -o%s", str.str().c_str(), file);
                 system(cmd);
             }
