@@ -32,7 +32,7 @@ namespace rl
 				throw ::std::runtime_error("nlopt failure");
 				break;
 			case ::NLOPT_INVALID_ARGS:
-				throw ::std::invalid_argument("nlopt invalid argument");
+				//throw ::std::invalid_argument("nlopt invalid argument");
 				break;
 			case ::NLOPT_OUT_OF_MEMORY:
 				throw ::std::bad_alloc();
