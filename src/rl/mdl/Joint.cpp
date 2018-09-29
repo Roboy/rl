@@ -77,7 +77,8 @@ namespace rl
 		}
 		
 		void
-		Joint::clip(::rl::math::Vector& q) const
+		Joint::
+		clip(::rl::math::Vector& q) const
 		{
 			for (::std::size_t i = 0; i < this->getDofPosition(); ++i)
 			{

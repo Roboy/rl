@@ -447,7 +447,7 @@ namespace rl {
                 kinematic_tree.addEdge(parent->getName(),child->getName());
             }
 
-            kinematic_tree.graphviz("kinematic_tree.png");
+//            kinematic_tree.graphviz("kinematic_tree.png");
 
             vector<string> kinematic_chain_links;
             kinematic_chain_links.push_back(end_link);
